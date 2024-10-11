@@ -17,7 +17,7 @@ settings:
 monitors:
   - id: nezha  # 唯一标识符
     name: 哪吒面板  # 监控名称
-    description: ''  # 描述（默认=空）
+    description: 'https://nz.xujw.us.kg/'  # 描述（默认=空）
     url: 'https://neat-feliza-kingmoon3-3ef42273.koyeb.app/'  # 需要抓取的 URL
     method: GET  # 请求方法（默认=GET）
     expectStatus: 200  # 正常运行的状态码（默认=200）
@@ -26,7 +26,7 @@ monitors:
 
   - id: Sub-Store  # 唯一标识符
     name: Sub-Store 订阅转换  # 监控名称
-    description: ''  # 描述（默认=空）
+    description: 'https://hf.kingxujw.net/'  # 描述（默认=空）
     url: 'https://087iu0np-substore.hf.space/'  # 需要抓取的 URL
     method: GET  # 请求方法（默认=GET）
     expectStatus: 200  # 正常运行的状态码（默认=200）
