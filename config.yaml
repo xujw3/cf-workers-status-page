@@ -15,25 +15,20 @@ settings:
   dayInHistogramNotOperational: '次事件'  # 直方图中显示监控不正常的内容，格式为 "xx 次事件"
 
 monitors:
-  - id: workers-cloudflare-com  # 唯一标识符
-    name: workers.cloudflare.com  # 监控名称
-    description: '您编写代码，剩下的交给我们。'  # 描述（默认=空）
-    url: 'https://workers.cloudflare.com/'  # 需要抓取的 URL
+  - id: nezha  # 唯一标识符
+    name: 哪吒面板  # 监控名称
+    description: ''  # 描述（默认=空）
+    url: 'https://nz.xujw.us.kg/'  # 需要抓取的 URL
     method: GET  # 请求方法（默认=GET）
     expectStatus: 200  # 正常运行的状态码（默认=200）
     followRedirect: false  # 是否跟随重定向（默认=false）
-    linkable: false  # 标题是否可点击为链接（默认=true）
+    linkable: true  # 标题是否可点击为链接（默认=true）
 
-  - id: www-cloudflare-com
-    name: www.cloudflare.com
-    description: '为任何连接到互联网的设备而构建。'
-    url: 'https://www.cloudflare.com'
-    method: GET
-    expectStatus: 200
-    linkable: true  # 标题可点击为链接（默认=true）
-
-  - id: blog-cloudflare-com
-    name: The Cloudflare Blog
-    url: 'https://blog.cloudflare.com/'
-    method: GET
-    expectStatus: 200
+  - id: Sub-Store  # 唯一标识符
+    name: Sub-Store订阅转换  # 监控名称
+    description: ''  # 描述（默认=空）
+    url: 'https://hf.kingxujw.net/'  # 需要抓取的 URL
+    method: GET  # 请求方法（默认=GET）
+    expectStatus: 200  # 正常运行的状态码（默认=200）
+    followRedirect: false  # 是否跟随重定向（默认=false）
+    linkable: true  # 标题是否可点击为链接（默认=true）
