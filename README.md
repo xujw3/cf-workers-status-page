@@ -33,9 +33,9 @@ You can either deploy with **Cloudflare Deploy Button** using GitHub Actions or 
 2. Navigate to your new **GitHub repository &gt; Settings &gt; Secrets** and add the following secrets:
 
    ```yaml
-   - Name: CF_API_TOKEN (should be added automatically)
+   - Name: CLOUDFLARE_API_TOKEN (should be added automatically)
 
-   - Name: CF_ACCOUNT_ID (should be added automatically)
+   - Name: CLOUDFLARE_ACCOUNT_ID (should be added automatically)
 
    - Name: SECRET_SLACK_WEBHOOK_URL (optional)
    - Value: your-slack-webhook-url
