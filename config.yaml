@@ -45,7 +45,7 @@ monitors:
   - id: edge-tunnel  # 唯一标识符
     name: Edge-Tunnel 订阅  # 监控名称
     description: ''  # 描述（默认=空）
-    url: 'https://edge.kingxujw.net/b7d2a368-e3b6-4625-82c3-5c8558c36cb1/'  # 需要抓取的 URL
+    url: 'https://edge.kingxujw.net/'  # 需要抓取的 URL
     method: GET  # 请求方法（默认=GET）
     expectStatus: 200  # 正常运行的状态码（默认=200）
     followRedirect: false  # 是否跟随重定向（默认=false）
