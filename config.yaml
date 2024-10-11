@@ -1,36 +1,36 @@
 settings:
-  title: '监控页'
-  url: 'https://status-page.eidam.dev' # used for Slack messages
-  logo: logo-192x192.png # image in ./public/ folder
-  daysInHistogram: 90 # number of days you want to display in histogram
-  collectResponseTimes: true # collects avg response times from CRON locations
+  title: '监控页'  # 页面标题
+  url: 'https://cf-workers-status-page-production.kingxujw.workers.dev'  # 用于发送 Slack 消息的 URL
+  logo: logo-192x192.png  # 在 ./public/ 文件夹中的 logo 图片
+  daysInHistogram: 30  # 直方图中显示的天数
+  collectResponseTimes: true  # 收集来自 CRON 位置的平均响应时间
 
-  allmonitorsOperational: 'All Systems Operational'
-  notAllmonitorsOperational: 'Not All Systems Operational'
-  monitorLabelOperational: 'Operational'
-  monitorLabelNotOperational: 'Not Operational'
-  monitorLabelNoData: 'No data'
-  dayInHistogramNoData: 'No data'
-  dayInHistogramOperational: 'All good'
-  dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
+  allmonitorsOperational: '所有系统正常运行'  # 当所有监控正常时显示的消息
+  notAllmonitorsOperational: '部分系统出现问题'  # 当部分监控未运行时显示的消息
+  monitorLabelOperational: '正常运行'  # 监控正常时的标签
+  monitorLabelNotOperational: '未运行'  # 监控未运行时的标签
+  monitorLabelNoData: '无数据'  # 没有数据时的标签
+  dayInHistogramNoData: '无数据'  # 直方图中没有数据时显示的内容
+  dayInHistogramOperational: '一切正常'  # 直方图中显示监控正常的内容
+  dayInHistogramNotOperational: '次事件'  # 直方图中显示监控不正常的内容，格式为 "xx 次事件"
 
 monitors:
-  - id: workers-cloudflare-com # unique identifier
-    name: workers.cloudflare.com
-    description: 'You write code. They handle the rest.' # default=empty
-    url: 'https://workers.cloudflare.com/' # URL to fetch
-    method: GET # default=GET
-    expectStatus: 200 # operational status, default=200
-    followRedirect: false # should fetch follow redirects, default=false
-    linkable: false # allows the title to be a link, default=true
+  - id: workers-cloudflare-com  # 唯一标识符
+    name: workers.cloudflare.com  # 监控名称
+    description: '您编写代码，剩下的交给我们。'  # 描述（默认=空）
+    url: 'https://workers.cloudflare.com/'  # 需要抓取的 URL
+    method: GET  # 请求方法（默认=GET）
+    expectStatus: 200  # 正常运行的状态码（默认=200）
+    followRedirect: false  # 是否跟随重定向（默认=false）
+    linkable: false  # 标题是否可点击为链接（默认=true）
 
   - id: www-cloudflare-com
     name: www.cloudflare.com
-    description: 'Built for anything connected to the Internet.'
+    description: '为任何连接到互联网的设备而构建。'
     url: 'https://www.cloudflare.com'
     method: GET
     expectStatus: 200
-    linkable: true # allows the title to be a link, default=true
+    linkable: true  # 标题可点击为链接（默认=true）
 
   - id: blog-cloudflare-com
     name: The Cloudflare Blog
