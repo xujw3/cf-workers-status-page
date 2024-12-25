@@ -45,7 +45,7 @@ monitors:
   - id: edge-tunnel  # 唯一标识符
     name: Edge-Tunnel 订阅  # 监控名称
     description: ''  # 描述（默认=空）
-    url: 'https://edge.kingxujw.net/'  # 需要抓取的 URL
+    url: 'https://edge.quie.us.kg/'  # 需要抓取的 URL
     method: GET  # 请求方法（默认=GET）
     expectStatus: 200  # 正常运行的状态码（默认=200）
     followRedirect: false  # 是否跟随重定向（默认=false）
@@ -54,7 +54,7 @@ monitors:
   - id: sub-converter  # 唯一标识符
     name: 优选订阅生成器  # 监控名称
     description: ''  # 描述（默认=空）
-    url: 'https://sub.kingxujw.net/'  # 需要抓取的 URL
+    url: 'https://sub.quie.us.kg/'  # 需要抓取的 URL
     method: GET  # 请求方法（默认=GET）
     expectStatus: 200  # 正常运行的状态码（默认=200）
     followRedirect: false  # 是否跟随重定向（默认=false）
