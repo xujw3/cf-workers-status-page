@@ -5,10 +5,14 @@ type = "webpack"
 webpack_config = "node_modules/flareact/webpack"
 compatibility_date = "2021-07-23"
 
-[triggers]
-crons = ["* * * * *"]
+[[kv_namespaces]]
+binding = "KV_STATUS_PAGE"
+id = "${KV_STATUS_PAGE_ID}"
 
-[site]
+[[triggers]]
+crons = ["0 * * * *"]
+
+[[site]]
 bucket = "out"
 entry-point = "./"
 
