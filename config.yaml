@@ -45,7 +45,7 @@ monitors:
   - id: vercel-index  # 唯一标识符
     name: vercel-onedrive-index  # 监控名称
     description: ''  # 描述（默认=空）
-    url: 'https://onedrive-vercel-index-zeta-ten-85.vercel.app/'  # 需要抓取的 URL
+    url: 'https://onedrive-vercel-index-zeta-ten-85.vercel.app/'
     method: GET  # 请求方法（默认=GET）
     expectStatus: 200  # 正常运行的状态码（默认=200）
     followRedirect: false  # 是否跟随重定向（默认=false）
